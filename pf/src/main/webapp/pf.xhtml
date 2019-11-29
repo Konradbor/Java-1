@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+</h:head>
+
+<h:body>
+
+    <div style="background-color: #e9ecef;">
+        <center>
+            <h1>#{imagesView.message}</h1>
+        </center>
+    </div>
+    <div>
+        <center>
+            <p:galleria value="#{imagesView.images}" var="image" panelWidth="500" panelHeight="313" showCaption="true">
+                <p:graphicImage name="images/#{image.path}" alt="Opis: #{image.description}" title="#{image.title}"/>
+            </p:galleria>
+        </center>
+    </div>
+
+
+    <!--    <h:graphicImage name="images/nature1.jpg" />-->
+</h:body>
+</html>
